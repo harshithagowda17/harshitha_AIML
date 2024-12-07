@@ -1,0 +1,36 @@
+//write a c program to print the reverse multiplication tables from 1 to n
+
+ 
+
+#include <stdio.h>
+
+
+int main()
+
+{
+
+    int num,i,j,product;
+
+    printf("enter a number =");
+
+    scanf("%d",&num);
+
+    for(int i=1;i<=num;i++)
+
+    {
+
+        for(j=10;j>=1;j--)
+
+        {
+
+            product=1*j;
+
+            printf("%d x %d=%d\t \n",i,j,product);
+
+        }
+
+        printf(" \n");
+
+    }
+
+}
