@@ -1,0 +1,30 @@
+write a c program to read the integer value as input for the user & find the count in digit in the number
+
+#include<stdio.h>
+
+int main()
+
+{
+   
+ int num;
+ 
+   int count;
+  
+  printf("enter the number =");
+ 
+   scanf("%d",&num);
+  
+  while(num!=0)
+{
+      
+  num=num/10;
+     
+   count++;
+      
+      printf("---------------\n");
+ 
+   }
+    
+    printf("%d is the count digit  \n",count);
+
+}

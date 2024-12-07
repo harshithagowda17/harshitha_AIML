@@ -1,0 +1,49 @@
+//write a c program to print even and odd numbers from 1 to n??
+
+#include <stdio.h>
+
+
+int main()
+ 
+{
+  
+  int num;
+int sum=0; 
+   
+ int Even_count=0;
+ 
+  int odd_count=0;
+ 
+   printf("enter the value of num =");
+ 
+   scanf("%d",&num);
+  
+  for(int i=1;i<=num;i++)
+ 
+   {
+   
+ if(i%2==0)
+  
+  {
+       
+ Even_count++;
+  
+  }
+ 
+   else
+   
+ {
+      
+  odd_count++;
+  
+  }
+
+}
+
+printf("Even count =%d \n",Even_count);
+
+printf("Odd count =%d \n",odd_count);
+  
+  return 0;
+
+}

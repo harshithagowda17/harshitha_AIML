@@ -1,0 +1,37 @@
+//write a c program to check whether the user entered 2 integer values are egual or not
+
+#include <stdio.h>
+
+
+int main()
+
+{
+    
+int num,first,second;
+
+    printf("enter the first number");
+
+    scanf("%d",&first,&num);
+
+    printf("enter the second number");
+  
+  scanf("%d",&second,&num);
+   
+ if(first==second)
+   
+ {
+        printf("the enter number is equal \n",num);
+
+    }
+  
+  else
+   
+ {
+       
+ printf("the enter number is not equal",num);
+ 
+   }
+   
+ return 0;
+
+}

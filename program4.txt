@@ -1,0 +1,31 @@
+// write a c program to read the integer as input for the use and print number from 1 to num??
+
+ 
+#include <stdio.h>
+
+
+int main()
+
+{
+
+int num;
+
+int i=1;
+ 
+  printf("enter a number=");
+  
+  scanf("%d",&num);
+  
+  while(i<=num)
+ 
+   {
+    
+    printf("%d \n",i);
+   
+     i++;
+  
+  }
+  
+  return 0;
+
+}
