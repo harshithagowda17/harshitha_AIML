@@ -1,0 +1,809 @@
+1 write a c program to read a integer value as input from the user and print sum of the digit present in the number??
+
+
+#include <stdio.h>
+
+
+int main()
+ 
+{
+
+    int num;
+
+    int sum_Digits=0;
+
+    int Rem=0;
+
+    printf("Enter a integer value = ");
+
+    scanf("%d",&num);
+
+    while(num!=0)
+
+    {
+        Rem=num%10;
+
+        sum_Digits=Rem+sum_Digits;
+
+        num=num/10;
+
+    }
+
+    printf("%d",sum_Digits);
+
+
+    return 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2 write a c program to print the reverse of user enter number ??
+
+
+#include <stdio.h>
+
+
+int main()
+ 
+{
+    int num;
+
+    int Reversed=0,Remainder;
+
+    printf("Enter a integer value = ");
+
+    scanf("%d",&num);
+    while(num!=0)
+
+    {
+
+        Remainder=num%10;
+
+        Reversed=Reversed*10 + Remainder;
+
+        num/=10;
+
+    }
+
+    printf("Reversed number is : %d  \n",Reversed);
+
+
+    return 0;
+
+}
+
+
+
+
+3 write a c program to print the following pattern ??
+
+
+
+#include <stdio.h>
+
+
+int main()
+ 
+{
+
+    int num ,i,j;
+
+    printf("Enter a number value = \n");
+
+    scanf("%d",&num);
+
+    for(int i=1;i<=num;i++) //number of lines
+
+    {
+
+    for(int j=1;j<=num;j++) //number of stars
+
+    {
+
+    
+        printf("* ");
+
+    }
+
+    printf("\n");
+
+    }
+
+    return 0;
+
+}
+
+OUTPUT
+
+*
+* * 
+* * *
+* * * *
+* * * * *
+
+
+
+
+
+4 write a c program to print  ??
+
+
+#include <stdio.h>
+
+int main()
+
+{
+
+    int num,i,j;
+
+    printf("Enter a number value = \n");
+
+    scanf("%d",&num);
+
+    for(int i=1;i<=num;i++)
+ 
+    {
+
+    for(int j=1;j<=num;j++)
+
+    {
+
+        printf("%d",j);
+
+    }
+
+        printf(" \n");
+
+    }
+
+
+    return 0;
+
+}
+
+
+
+
+5 write a c program to print  ??
+
+
+
+#include <stdio.h>
+
+int main()
+
+{
+
+    int num,i,j;
+
+    printf("Enter a number value = \n");
+
+    scanf("%d",&num);
+
+    for(int i=1;i<=num;i++)
+ 
+    {
+
+    for(int j=1;j<=num;j++)
+
+    {
+
+        printf("%d ",i);
+
+    }
+
+        printf(" \n");
+}
+
+
+    return 0;
+
+}
+
+OUTPUT
+
+1
+2 2
+3 3 3
+4 4 4 4
+5 5 5 5 5
+
+
+
+
+
+
+6  // Online C compiler to run C program onlin
+
+#include <stdio.h>
+
+
+int main()
+
+{
+
+
+    int num;
+
+    printf("Enter the value of num = \n");
+
+    scanf("%d",&num);
+
+    for(int i=1;i<=num;i++)
+
+    {
+
+    for(int j=1;j<=num;j++)
+{
+
+         printf("%c ",(64+j));
+
+    }
+
+        printf(" \n");
+
+    }
+
+    return 0;
+
+}
+
+
+
+
+
+7  // Online C compiler to run C program onlin
+
+
+#include <stdio.h>
+
+
+int main()
+
+{
+
+
+    int num;
+
+    printf("Enter the value of num = \n");
+
+    scanf("%d",&num);
+
+    for(int i=1;i<=num;i++)
+
+    {
+
+    for(int j=1;j<=num;j++)
+
+    {
+
+         printf("%c ",(96+i));
+
+    }
+
+        printf(" \n");
+
+    }
+
+    return 0;
+
+}
+
+
+8 // Online C compiler to run C program onlin
+
+#include <stdio.h>
+
+
+int main()
+
+{
+
+
+    int num;
+
+    printf("Enter the value of num = \n");
+
+    scanf("%d",&num);
+
+    for(int i=1;i<=num;i++)
+
+    {
+
+    for(int j=1;j<=i;j++)
+
+    {
+
+         printf("* ",i);
+
+    }
+
+        printf(" \n");
+
+    }
+
+    return 0;
+
+}
+
+
+
+
+
+
+9  // Online C compiler to run C program onlin
+
+
+#include <stdio.h>
+
+
+int main()
+
+{
+
+
+    int num;
+
+    printf("Enter the value of num = \n");
+
+    scanf("%d",&num);
+
+    for(int i=1;i<=num;i++)
+
+    {
+
+    for(int j=1;j<=i;j++)
+
+    {
+
+         printf(" %c ",(64+i));
+    }
+
+        printf(" \n");
+
+    }
+
+    return 0;
+
+}
+
+output
+
+A 
+B B 
+C C C
+D D D D
+E E E E E
+
+
+
+
+10 // Online C compiler to run C program onlin
+
+
+#include <stdio.h>
+
+
+int main()
+
+{
+
+
+    int num;
+
+    printf("Enter the value of num = \n");
+
+    scanf("%d",&num);
+
+    for(int i=1;i<=num;i++)
+
+    {
+
+    for(int j=1;j<=i;j++)
+
+    {
+
+         printf(" %c ",(64+i));
+
+    }
+
+        printf(" \n");
+
+    }
+
+    return 0;
+
+}
+
+output 
+A
+A B 
+A B C
+A B C D
+A B C D E
+
+
+
+
+11 // Online C compiler to run C program onlin
+
+
+#include <stdio.h>
+
+
+int main
+{
+
+
+    int num;
+
+    printf("Enter the value of num = \n");
+
+    scanf("%d",&num);
+
+    for(int i=1;i<=num;i++)
+
+    {
+
+    for(int j=1;j<=i;j++)
+
+    {
+
+         printf(" %c ",(96+i));
+
+    }
+
+        printf(" \n");
+
+    }
+
+    return 0;
+
+}
+
+output 
+a 
+b b 
+c c c
+d d d d 
+e e e e e
+
+
+
+12 // Online C compiler to run C program onlin
+
+
+#include <stdio.h>
+
+int main()
+
+{
+
+
+    int num;
+
+    printf("Enter the value of num = \n");
+
+    scanf("%d",&num);
+
+    for(int i=1;i<=num;i++)
+
+    {
+
+    for(int j=1;j<=i;j++)
+
+    {
+         printf(" %c ",(96+j));
+
+    }
+printf(" \n");
+
+    }
+
+    return 0;
+}
+
+output 
+
+a 
+a b 
+a b c
+a b c d
+a b c d e 
+
+
+
+
+
+13 // Online C compiler to run C program onlin
+#include <stdio.h>
+
+int main()
+{
+
+    int num;
+    printf("Enter the value of num = \n");
+    scanf("%d",&num);
+    for(int i=1;i<=num;i++)
+    {
+    for(int j=1;j<=i;j++)
+    {
+         printf(" %c ",(96+i));
+    }
+        printf(" \n");
+    }
+    return 0;
+}
+
+output 
+1 0
+1 1 0
+1 1 1 0
+1 1 1 1 0
+1 1 1 1 1 0
+
+
+
+
+14 #include <stdio.h>
+
+int main()
+{
+
+    int num;
+    printf("Enter the value of num = \n");
+    scanf("%d",&num);
+    for(int i=1;i<=num;i++)
+    {
+    for(int j=1;j<=num;j++)
+    {
+        if(i%2==0)
+        {
+            printf(" 1 ");
+        }
+        else
+        {
+            printf(" 0 ");
+        }
+    }
+    printf(" \n");
+    }
+}   
+
+output  
+ 
+0 0 0 0 0 
+1 1 1 1 1
+0 0 0 0 0
+1 1 1 1 1
+0 0 0 0 0 
+
+
+
+15 #include <stdio.h>
+
+int main()
+{
+
+    int num;
+    printf("Enter the value of num = \n");
+    scanf("%d",&num);
+    for(int i=1;i<=num;i++)
+    {
+    for(int j=1;j<=num;j++)
+    {
+        if(i%2==0)
+        {
+            printf(" 0 ");
+        }
+        else
+        {
+            printf(" 1 ");
+        }
+    }
+    printf(" \n");
+    }
+}   
+
+output  
+
+1 1 1 1 1 
+0 0 0 0 0
+1 1 1 1 1
+0 0 0 0 0
+1 1 1 1 1
+
+
+
+16 #include <stdio.h>
+
+int main()
+{
+
+    int num;
+    printf("Enter the value of num = \n");
+    scanf("%d",&num);
+    for(int i=1;i<=num;i++)
+    {
+    for(int j=1;j<=num;j++)
+    {
+        if(i%2!=0)
+        {
+            printf("%c ",(64+i));
+        }
+        else
+        {
+            printf(" 0 ");
+        }
+    }
+    printf(" \n");
+    }
+}   
+
+
+output
+
+A A A A A
+0 0 0 0 0
+C C C C C
+0 0 0 0 0
+E E E E E
+
+
+
+
+17 #include <stdio.h>
+
+int main()
+{
+
+    int num;
+    printf("Enter the value of num = \n");
+    scanf("%d",&num);
+    for(int i=1;i<=num;i++)
+    {
+    for(int j=1;j<=num;j++)
+    {
+        if(i%2!=0)
+        {
+            printf("%c ",(64+j));
+        }
+        else
+        {
+            printf(" 0 ");
+        }
+    }
+    printf(" \n");
+    }
+}   
+
+output
+
+A B C D E 
+0 0 0 0 0 
+A B C D E
+0 0 0 0 0
+A B C D E
+
+
+
+18 #include <stdio.h>
+
+int main()
+{
+
+    int num;
+    printf("Enter the value of num = \n");
+    scanf("%d",&num);
+    for(int i=1;i<=num;i++)
+    {
+    for(int j=1;j<=num;j++)
+    {
+        if(i%2!=0)
+        {
+            printf("%c ",(96+i));
+        }
+        else
+        {
+            printf(" 1 ");
+        }
+    }
+    printf(" \n");
+    }
+}   
+
+output 
+
+a a a a a
+1 1 1 1 1
+c c c c c
+1 1 1 1 1
+e e e e e
+
+
+
+19#include <stdio.h>
+
+int main()
+{
+
+    int num;
+    printf("Enter the value of num = \n");
+    scanf("%d",&num);
+    for(int i=1;i<=num;i++)
+    {
+    for(int j=1;j<=num;j++)
+    {
+        if(i%2!=0)
+        {
+            printf("%c ",(96+j));
+        }
+        else
+        {
+            printf(" 1 ");
+        }
+    }
+    printf(" \n");
+    }
+}   
+
+output
+
+a b c d e
+1 1 1 1 1
+a b c d e
+1 1 1 1 1
+a b c d e
+
+
+
+
+20 #include <stdio.h>
+
+int main()
+{
+
+    int num;
+    printf("Enter the value of num = \n");
+    scanf("%d",&num);
+    for(int i=1;i<=num;i++)
+    {
+    for(int j=1;j<=num;j++)
+    {
+        if(j%2==0)
+        {
+            printf(" * ");
+        }
+        else
+        {
+            printf("%c ",(96+j));
+        }
+    }
+    printf(" \n");
+    }
+}   
+
+output
+
+a * c * e
+a * c * e
+a * c * e
+a * c * e
+a * c * e
