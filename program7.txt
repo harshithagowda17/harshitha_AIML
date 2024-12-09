@@ -1,27 +1,32 @@
-//write a c program to print the square value from 1to n.
-
+//write a c program to read an month number as input from the user and check whether a valid month number or not
 
 #include <stdio.h>
 
+
 int main()
- 
 {
-  
-  int num;
- 
-   printf("enter the value of num=");
- 
-   scanf("%d",&num);
+
+int num;
    
- for(int i=1;i<=num;i++)
+ printf("enter a number"); 
+scanf("%d",&num);
   
-  {
+  if(num>=1&&num<=18)
+{
+     
+   printf("%d the valid month number\n",num);
+  
+  }
    
-     printf("%d \n",i*i);
+ else
+   
+ {
+      
+  printf("%d the not a valid month number",num);
   
   }
 
-  
-  return 0;
+ 
+   return 0;
 
 }

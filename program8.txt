@@ -1,31 +1,31 @@
-//write a c program to print the square values from 1 to n
-
+//write a c program to check whether the number is even or odd
 
 #include <stdio.h>
 
-int main() 
+
+int main()
 
 {
-    
+
 int num;
-   
- int sum=0;
  
-   printf("enter the value of num=");
-  
-  scanf("%d",&num);
-  
-  for(int i=1;i<=num;i++)
+   printf("enter a number=");
  
-   {
-   
-     sum=sum+i;//LHS(variable)=RHS(value)
-  
-  }
+   scanf("%d",&num);
+ 
+   if(num%2==0)
   
   {
-    
-    printf("%d is summation of 1 to %d \n",sum,num);
+       
+ printf("%d the number is even\n",num);
+ 
+   }
+  
+  else
+ 
+   {
+     
+   printf("%d the numnber is odd",num);
   
   }
 

@@ -1,30 +1,33 @@
-// write a c program to read the integer as input for the use and print number from 1 to num??
+//write a c program to read interger value as input from the user and check whether it is two digit number or not
 
- 
 #include <stdio.h>
 
 
 int main()
 
 {
-
-int num;
-
-int i=1;
- 
-  printf("enter a number=");
+   
+ int num;
+  
+  printf("enter the integer is digit or number=");
   
   scanf("%d",&num);
-  
-  while(i<=num)
- 
-   {
-    
-    printf("%d \n",i);
    
-     i++;
+ if((num<=99 &&num<=10)||(num>-99&&num<-10))
   
-  }
+  {
+    
+    printf("enter integer value is two digit number\n",num);
+ 
+   }
+   
+ else
+   
+ { 
+   
+     printf("enter integer value is a not a two digit number",num);
+ 
+   }
   
   return 0;
 
