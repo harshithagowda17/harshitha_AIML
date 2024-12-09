@@ -1,0 +1,41 @@
+//write a c program to print the programs repeatedlly 
+
+
+
+#include <stdio.h>
+
+
+int main()
+
+{
+   
+   void Display()
+
+    {
+
+        printf("C \n");
+
+        printf("C++ \n");
+
+        printf("Java \n");
+
+        printf("Python \n");
+
+        printf("SQL \n");
+        printf("Javascript \n");
+
+    }
+
+    Display();
+
+    Display();
+
+    Display();
+    Display();
+
+    Display();
+
+    Display();
+
+
+}

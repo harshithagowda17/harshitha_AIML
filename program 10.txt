@@ -1,0 +1,28 @@
+//write a c program to add two numbers using functions
+
+ 
+
+#include <stdio.h>
+
+
+int main()
+
+{
+
+    void Add(int num1,int num2)
+
+    {
+
+        printf("Adittion of %d & %d is = %d \n",num1,num2,(num1+num2));
+
+    }
+
+    Add(17,6);
+  
+  Add(29,9);
+
+    Add(01,6);
+
+    Add(15,5);
+
+}

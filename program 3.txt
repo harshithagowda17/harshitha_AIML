@@ -1,31 +1,35 @@
-// write a c program to read the integer as input for the use and print number from 1 to num?? 
+// write a c program  to print the odd numbers from n to 1
+
 
 
 #include <stdio.h>
 
 
 int main()
-
+ 
 {
-
-int num;
-
-int i=1;
-  
-  printf("enter a number=");
-  
-  scanf("%d",&num);
- 
-   while(i<=num)
-  
-  {
-       
- printf("%d \n",i);
     
-    i++;
+   int num;
  
-   }
-   
- return 0;
+   printf("enter the number =");
+
+    scanf("%d",&num);
+
+    for(int i=num;i>=1;i--)
+
+    {
+ 
+       if(i%2!=0)
+
+        {
+ 
+           printf("%d   \n",i);
+
+        }
+
+
+    }
+
+    return 0;
 
 }

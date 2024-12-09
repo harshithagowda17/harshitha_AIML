@@ -1,0 +1,28 @@
+//write a c program to multiplication two numbers using function
+
+
+
+#include <stdio.h>
+
+int main()
+
+{
+
+    void mult(int num1,int num2)
+
+    {
+
+        printf("multiplication of %d & %d is = %d \n",num1,num2,(num1*num2));
+
+    }
+
+    mult(17,6);
+  
+  mult(29,9);
+
+    mult(01,6);
+
+    mult(15,5);
+
+
+}

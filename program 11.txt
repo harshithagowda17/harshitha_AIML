@@ -1,0 +1,29 @@
+//write a c program to subbstract two numbers using function
+
+
+
+#include <stdio.h>
+
+
+int main()
+
+{
+
+    void sub(int num1,int num2)
+
+    {
+
+        printf("substract of %d & %d is = %d \n",num1,num2,(num1-num2));
+
+    }
+
+    sub(17,6);
+  
+  sub(29,9);
+
+    sub(01,6);
+
+    sub(15,5);
+
+
+}

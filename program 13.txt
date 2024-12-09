@@ -1,0 +1,37 @@
+//write a c program to qotient and remender two numbers using function
+
+
+
+#include <stdio.h>
+
+
+int main()
+
+{
+
+    int dividend, divisor, quotient, remainder;
+
+    printf("enter dividend: ");
+
+    scanf("%d", &dividend);
+
+    printf("enter divisor: ");
+
+    scanf("%d", &divisor);
+
+    
+    //computer quoitent
+
+    quotient = dividend / divisor;
+
+    
+    //computer remainder
+
+    remainder = dividend % divisor;
+
+    printf("qutient = %d\n", quotient);
+
+    printf("remainder = %d",remainder);
+
+    
+}
