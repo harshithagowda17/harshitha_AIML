@@ -1,35 +1,28 @@
-// write a c program  to print the even numbers from n to 1
+// write a c program to read the input for num as integer & print the even nuumber from 1 to num??
 
-
-
+ 
 #include <stdio.h>
 
 
-int main() 
+int main()
 
 {
- 
-   int num;
+
+int num;
   
-   printf("enter the number =");
-
+  printf("enter a  even number=");
+ 
    scanf("%d",&num);
-    for(int i=num;i>=1;i--)
-
-    {
-
-        if(i%2==0)
+  
+  for(int i=2;i<=num;i++)
  
-       {
- 
-           printf("%d   \n",i);
- 
-       }
-
- 
-   }
-
-
-    return 0;
+   {
+    
+    if(i%2==0)
+   
+     printf("%d \n,i");
+}
+  
+  return 0;
 
 }
