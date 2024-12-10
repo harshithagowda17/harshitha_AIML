@@ -1,0 +1,414 @@
+1   //write a c program to check whether the user enter number is prime number or not 
+
+
+#include <stdio.h>
+
+
+int main()
+ 
+{
+
+    int num;
+
+    printf("enter the value of num = \n");
+
+    scanf("%d",&num);
+
+    int count=0;
+
+    for(int i=1;i<=num;i++)
+
+    {
+
+        if(num%i==0)
+
+        {
+
+            count++;
+
+        }
+
+    }
+
+    if(count==2)
+
+    {
+
+        printf("%d  It is a prime number ",num);
+
+    }
+
+    else
+
+    {
+
+        printf("%d It is not a prime number ",num);
+
+    }
+
+
+    return 0;
+
+}
+
+
+
+
+2   //write a c program to print all prime number from 1 to N ??
+
+
+#include <stdio.h>
+
+
+int main()
+
+{
+
+    char Prog_Lang[]="C Programming";
+
+    printf("%s  \n",Prog_Lang);
+    for(int i=0;i<13;i++)
+
+    //Iteration of string using for loop
+
+    {
+
+        printf("%c  \n",Prog_Lang[i]);
+
+    }
+
+    return 0;
+
+}
+  
+
+
+
+3  //write a example for string  ??
+
+
+#include <stdio.h>
+
+
+int main()
+
+{
+
+    char Prog_Lang[]="C Programming \n";
+
+    printf("%s  \n",Prog_Lang);
+
+    for(int i=0;i<13;i++)
+
+    //Iteration of string using for loop
+
+    {
+
+        printf("%c  \n",Prog_Lang[i]);
+
+    }
+
+    return 0;
+
+}
+  
+
+
+
+4  //write a c program to write a prime number from 1 to n  ??
+
+
+#include <stdio.h>
+
+
+int isprime(int num)
+
+    {
+
+        if(num <= 1)
+
+        return 0;
+
+        for (int i = 2;i * i <=num;i++)
+
+        {
+
+            if(num % i == 0)
+
+            {
+
+            return 0;
+
+            }
+
+        }
+
+        return 1;
+
+    }
+
+    int main()
+
+    {
+
+        int n;
+
+        printf("enter the value of n = ");
+
+        scanf("%d",&n);
+
+        printf("prime numbers between 1 and %d are = \n",n);
+
+        for (int i=1; i<=n; i++)
+
+        {
+
+          if (isprime(i))
+
+        {
+
+            printf("%d ",i);
+
+        }
+
+    }
+
+    printf("\n");
+
+    
+    return 0;
+
+}
+
+
+
+5  //write a c program to declare & create an array of size 10 and access the array elements ??
+
+
+
+#include <stdio.h>
+int main()
+
+{
+
+  int array[10];
+
+  for(int i=0;i<10;i++)
+
+  {
+
+  array[i]=i + 1;
+
+  }
+
+  printf("array elements are : \n");
+
+  for(int i = 0;i<10;i++)
+
+  {
+
+      printf("elements %d : %d\n",i,array[i]);
+
+  }
+
+  return 0;
+
+  }
+
+
+6  //write a c program to declare & create an array of size 10 and access the array elements ??
+
+
+
+#include <stdio.h>
+
+int main()
+
+{
+
+  int num_array[10];
+
+  num_array[0]=10;
+
+  num_array[1]=20;
+
+  num_array[2]=30;
+
+  num_array[3]=40;
+
+  num_array[4]=50;
+
+  num_array[5]=60;
+
+  num_array[6]=70;
+
+  num_array[7]=80;
+
+  num_array[8]=90;
+
+  num_array[9]=100;
+
+  printf("array elements are = \n");
+
+  for(int i=0;i<10;i++)
+
+  {
+
+      printf("%d ,",num_array[i]);
+
+  }
+
+}
+
+
+7  // write a c program to accept a student name and scores in 3 subjects display the total, average and class secured based on the following critiria : first class = average score of 60 and above : second class= average score of 50 and above : third class = average score of 35 and above : fail = average score less than 35  note: (each student will score more than 35 marks in each subject(if qualified))??
+
+
+
+
+#include <stdio.h>
+
+int main()
+
+{
+
+    char studentname[10];
+
+    int subjectOne;
+
+    int subjectTwo;
+
+    int subjectThree;
+
+    int Total;
+    int Average;
+    printf("Enter the student name = \n");
+
+    scanf("%s",&studentname);
+
+    printf("Enter the First subject marks = \n");
+
+    scanf("%d",&subjectOne);
+
+    printf("Enter the Second subject marks = \n");
+
+    scanf("%d",&subjectTwo);
+
+    printf("enter the Third subject marks = \n");
+
+    scanf("%d",&subjectThree);
+
+    printf("student report card \n");
+
+    if(subjectOne<35 || subjectTwo<35 || subjectThree<35)
+
+    {
+
+        printf("fail");
+
+    }
+
+    else
+
+    {
+
+        Total=subjectOne+subjectTwo+subjectThree;
+
+        Average=Total/3;
+
+        printf("Total = %d \n",Total);
+
+        printf("Average = %d \n",Average);
+
+        if(Average>=85)
+
+        {
+
+            printf("First class");
+
+        }
+
+        else
+
+        if(Average>=60)
+
+        {
+
+            printf("Second class");
+
+        }
+
+        else
+
+        {
+
+            printf("Third class");
+
+        }
+
+    }
+
+}
+
+
+8   
+#include <stdio.h>
+
+int main()
+
+{
+
+    int productcode;
+
+    int productname;
+    
+    int quantity;
+
+    int price;
+
+    printf("enter the productcode = \n");
+
+    scanf("%d \n",&productcode);
+
+    printf("enter the productname = \n");
+
+    scanf("%s \n",&productname);
+
+    printf("enter the quantity = \n");
+
+    scanf("%d \n",&quantity);
+
+    printf("enter the price = \n");
+
+    scanf("%d \n",&price);
+
+    printf("customer bill =  \n");
+printf("-----------------\n");
+
+    printf("productcode = %s \n",productname);
+
+    printf("quantity = %d \n",quantity);
+
+    printf("price = %d*price \n",quantity,price);
+
+    printf("Total price = %d",(quantity*price));
+
+}
+
+output :
+enter the productcode = 
+vjt
+enter the productname = 
+123
+enter the quantity = 
+3
+enter the price = 
+50
+customer bill = 
+-----------------
+productcode = vjt 
+quantity = 123 
+price = 123*price 
+Total price = 369
+
+=== Code Execution Successful ===
